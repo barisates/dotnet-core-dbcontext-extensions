@@ -2,9 +2,14 @@
 
 In this repository, I will share the extensions I use for database management when developing projects with .Net Core.
 
-#### AddDynamicDbContext
+#### AddDynamicDbContext 
+[![NuGet](https://img.shields.io/nuget/v/AddDynamicDbContext.svg)](https://www.nuget.org/packages/AddDynamicDbContext)
 
 This extension aims to simplify ConnectionString definition for **Development** and **Production** environments when adding DbContext to our .Net Core project.
+
+```
+Install-Package AddDynamicDbContext -Version 1.0.0
+```
 
 You can use this plugin when adding **DbContext** to services in **Startup**. ConnectionString to be used when accessing your database will be determined automatically according to your environment.
 
