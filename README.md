@@ -8,7 +8,7 @@ This extension aims to simplify ConnectionString definition for **Development** 
 
 You can use this plugin when adding **DbContext** to services in **Startup**. ConnectionString to be used when accessing your database will be determined automatically according to your environment.
 
-It is simple to use, we call the ** `AddDDbContext`** extension when adding dbcontext in the **Startup.cs** `ConfigureServices` method.
+It is simple to use, we call the **`AddDDbContext`** extension when adding dbcontext in the **Startup.cs** `ConfigureServices` method.
 
 ```csharp
 services.AddDDbContext<SampleDbContext>("Sample");
