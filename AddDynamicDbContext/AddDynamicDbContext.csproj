@@ -4,6 +4,13 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <Authors>Barış Ateş</Authors>
     <Copyright>Copyright © Barış Ateş 2020</Copyright>
+    <RepositoryUrl>https://github.com/barisates/dotnet-core-dbcontext-extensions</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageProjectUrl>https://github.com/barisates/dotnet-core-dbcontext-extensions</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Description>This extension aims to simplify ConnectionString definition for Development and Production environments when adding DbContext to our .Net Core project.</Description>
+    <PackageTags>dotnet-core dbcontext development-environment production-enviroment connectionstrings</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +21,13 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.18" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
