@@ -14,7 +14,7 @@ It is simple to use, we call the **`AddDDbContext`** extension when adding dbcon
 services.AddDDbContext<SampleDbContext>("Sample");
 ```
 
-We add our **Development** and **Production** environment information to the **ConnectionStrings** section of our `appsettings.json` file.
+We add our **Development** and **Production** environment information to the **ConnectionStrings** section of our **`appsettings.json`** file.
 
 ```json
 "ConnectionStrings": {
