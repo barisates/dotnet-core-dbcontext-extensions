@@ -39,3 +39,12 @@ Descriptions and default values for the extension parameters.
 | connectionStringKey | string | yes |  | ConnectionString key at the **appsettins.json** file. |
 | provider | Provider | no | Provider.SqlServer | Select the type of provider to use when connecting. You can choose [**SqlServer** or **MySQLServer**]. |
 | debug | bool | no | false | Use the Production environment while in Debug mode. |
+
+
+##### Dockerfile
+
+If you don't add the following line to Dockerfile for the production environment, the environment variable returns null. The extension overcomes this situation. I leave it as information.
+
+```yaml
+ENV ASPNETCORE_ENVIRONMENT=Production
+```
